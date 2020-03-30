@@ -7,15 +7,15 @@
 
 #### 客户端代码放在这:
 ```
-//创建管道
+      //创建管道
      var channel = GrpcChannel.ForAddress(" https://localhost:5001");
-//创建链接
-            var client = new HandleMarkDataService.HandleMarkDataServiceClient(channel);
-//发起请求
-          var rap= await client.HandleMDAsync(new HandleMarkData
+      //创建链接
+     var client = new HandleMarkDataService.HandleMarkDataServiceClient(channel);
+      //发起请求
+     var rap= await client.HandleMDAsync(new HandleMarkData
             {
                 SCZSBH = "1323"
             });
-         //读取返回值
-         Console.WriteLine($"xxxxxxxxx{rap}");
+      //读取返回值
+     Console.WriteLine($"xxxxxxxxx{rap}");
 ```
