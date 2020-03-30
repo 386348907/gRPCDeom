@@ -2,7 +2,7 @@
 
 ## 此代码为gRPC的服务端   主要为了保存  以备日后使用
 
-### gRPC 介绍:  [简书](https://www.jianshu.com/p/9c947d98e192,'gRPC介绍')
+### gRPC 介绍:  [简书](https://www.jianshu.com/p/9c947d98e192)
  
 
 ### 使用步骤 1 定义消息
