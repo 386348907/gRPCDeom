@@ -1,0 +1,30 @@
+﻿syntax="proto3";
+
+package FirstServer.Message;
+
+//指定命名空间
+option csharp_namespace="FirstServer.Message";
+ 
+message  HandleMarkData{
+
+string SCZSBH=1;
+
+}
+
+ 
+message  HandleMarkDataRequest{
+
+int32 status=1;
+string msh=2;
+string data=3;
+string r1=4;
+string r2=5;
+
+}
+
+
+service HandleMarkDataService{
+
+rpc HandleMD(HandleMarkData) returns (HandleMarkDataRequest);
+
+}
